@@ -5,8 +5,8 @@ uint8_t buf[8] = {
   0 };   /* Keyboard report buffer */
 int loopcount = 0;
 
-String attackcode = "test";
-int stringlength = attackcode.length();
+char attackcode[] = "test";
+int stringlength = strlen(attackcode);
 
 void setup() 
 {
@@ -25,6 +25,10 @@ void loop()
 {
 
   delay(10);
+  for(int i=0; i < stringlength; ++i){
+    parse(i);
+  }
+  /*
   if( loopcount < stringlength ) {
     typeKey(KEY_A);
     digitalWrite(LED_BUILTIN, HIGH);
@@ -32,6 +36,12 @@ void loop()
   }
   else {
     flashLight(); }
+    */
+}
+
+int parse(int i){
+  char currentKey = attackcode[i];
+  
 }
 
 void releaseKey() 
