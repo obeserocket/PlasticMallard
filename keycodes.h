@@ -103,3 +103,12 @@
 #define KEY_KP9 0x61 // Keypad 9 and Page Up
 #define KEY_KP0 0x62 // Keypad 0 and Insert
 #define KEY_KPDOT 0x63 // Keypad . and Delete
+
+#define KEY_LEFTCTRL 0xe0 // Keyboard Left Control
+#define KEY_LEFTSHIFT 0xe1 // Keyboard Left Shift
+#define KEY_LEFTALT 0xe2 // Keyboard Left Alt
+#define KEY_LEFTMETA 0xe3 // Keyboard Left GUI
+#define KEY_RIGHTCTRL 0xe4 // Keyboard Right Control
+#define KEY_RIGHTSHIFT 0xe5 // Keyboard Right Shift
+#define KEY_RIGHTALT 0xe6 // Keyboard Right Alt
+#define KEY_RIGHTMETA 0xe7 // Keyboard Right GUI
